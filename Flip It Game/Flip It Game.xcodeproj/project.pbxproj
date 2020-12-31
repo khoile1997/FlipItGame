@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E33CC9F2462671900256CBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E33CC9E2462671900256CBE /* AppDelegate.swift */; };
+		6E33CCA12462671900256CBE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6E33CCA02462671900256CBE /* GameScene.sks */; };
+		6E33CCA32462671900256CBE /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6E33CCA22462671900256CBE /* Actions.sks */; };
+		6E33CCA52462671900256CBE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E33CCA42462671900256CBE /* GameScene.swift */; };
+		6E33CCA72462671900256CBE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E33CCA62462671900256CBE /* GameViewController.swift */; };
+		6E33CCAA2462671900256CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E33CCA82462671900256CBE /* Main.storyboard */; };
+		6E33CCAC2462671C00256CBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E33CCAB2462671C00256CBE /* Assets.xcassets */; };
+		6E33CCAF2462671C00256CBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E33CCAD2462671C00256CBE /* LaunchScreen.storyboard */; };
+		6E33CCBA2462671D00256CBE /* Flip_It_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E33CCB92462671D00256CBE /* Flip_It_GameTests.swift */; };
+		6E33CCC52462671D00256CBE /* Flip_It_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E33CCC42462671D00256CBE /* Flip_It_GameUITests.swift */; };
+		6E33CCD324626EA300256CBE /* SuperMario256.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E33CCD224626EA300256CBE /* SuperMario256.ttf */; };
+		6E33CCD9246348E000256CBE /* Magic.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6E33CCD8246348E000256CBE /* Magic.sks */; };
+		6E33CCE02463D9D600256CBE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E33CCDF2463D9D600256CBE /* AVFoundation.framework */; };
+		6E33CCE22463DB6200256CBE /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E33CCE12463DB6200256CBE /* SoundManager.swift */; };
+		6E33CCF22466457A00256CBE /* BadApple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E33CCF12466457A00256CBE /* BadApple.mp3 */; };
+		6E33CCF6246C816D00256CBE /* 8BitSurf.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E33CCF3246C816D00256CBE /* 8BitSurf.mp3 */; };
+		6E33CCF7246C816D00256CBE /* ShakeItUp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E33CCF4246C816D00256CBE /* ShakeItUp.mp3 */; };
+		6E33CCF8246C816D00256CBE /* FeelGood.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E33CCF5246C816D00256CBE /* FeelGood.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E33CCB62462671D00256CBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E33CC932462671900256CBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E33CC9A2462671900256CBE;
+			remoteInfo = "Flip It Game";
+		};
+		6E33CCC12462671D00256CBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E33CC932462671900256CBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E33CC9A2462671900256CBE;
+			remoteInfo = "Flip It Game";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E33CC9B2462671900256CBE /* Fusion Atom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fusion Atom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E33CC9E2462671900256CBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E33CCA02462671900256CBE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		6E33CCA22462671900256CBE /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		6E33CCA42462671900256CBE /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		6E33CCA62462671900256CBE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6E33CCA92462671900256CBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E33CCAB2462671C00256CBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E33CCAE2462671C00256CBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E33CCB02462671C00256CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E33CCB52462671D00256CBE /* Flip It GameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flip It GameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E33CCB92462671D00256CBE /* Flip_It_GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flip_It_GameTests.swift; sourceTree = "<group>"; };
+		6E33CCBB2462671D00256CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E33CCC02462671D00256CBE /* Flip It GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flip It GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E33CCC42462671D00256CBE /* Flip_It_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flip_It_GameUITests.swift; sourceTree = "<group>"; };
+		6E33CCC62462671D00256CBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E33CCD224626EA300256CBE /* SuperMario256.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SuperMario256.ttf; sourceTree = "<group>"; };
+		6E33CCD8246348E000256CBE /* Magic.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Magic.sks; sourceTree = "<group>"; };
+		6E33CCDF2463D9D600256CBE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6E33CCE12463DB6200256CBE /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		6E33CCF12466457A00256CBE /* BadApple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BadApple.mp3; sourceTree = "<group>"; };
+		6E33CCF3246C816D00256CBE /* 8BitSurf.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8BitSurf.mp3; sourceTree = "<group>"; };
+		6E33CCF4246C816D00256CBE /* ShakeItUp.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ShakeItUp.mp3; sourceTree = "<group>"; };
+		6E33CCF5246C816D00256CBE /* FeelGood.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FeelGood.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E33CC982462671900256CBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E33CCE02463D9D600256CBE /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E33CCB22462671D00256CBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E33CCBD2462671D00256CBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E33CC922462671900256CBE = {
+			isa = PBXGroup;
+			children = (
+				6E33CC9D2462671900256CBE /* Flip It Game */,
+				6E33CCB82462671D00256CBE /* Flip It GameTests */,
+				6E33CCC32462671D00256CBE /* Flip It GameUITests */,
+				6E33CC9C2462671900256CBE /* Products */,
+				6E33CCDE2463D9D400256CBE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6E33CC9C2462671900256CBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E33CC9B2462671900256CBE /* Fusion Atom.app */,
+				6E33CCB52462671D00256CBE /* Flip It GameTests.xctest */,
+				6E33CCC02462671D00256CBE /* Flip It GameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E33CC9D2462671900256CBE /* Flip It Game */ = {
+			isa = PBXGroup;
+			children = (
+				6E33CCE32463DB7700256CBE /* sound */,
+				6E33CC9E2462671900256CBE /* AppDelegate.swift */,
+				6E33CCE12463DB6200256CBE /* SoundManager.swift */,
+				6E33CCA02462671900256CBE /* GameScene.sks */,
+				6E33CCD224626EA300256CBE /* SuperMario256.ttf */,
+				6E33CCA22462671900256CBE /* Actions.sks */,
+				6E33CCA42462671900256CBE /* GameScene.swift */,
+				6E33CCD8246348E000256CBE /* Magic.sks */,
+				6E33CCA62462671900256CBE /* GameViewController.swift */,
+				6E33CCA82462671900256CBE /* Main.storyboard */,
+				6E33CCAB2462671C00256CBE /* Assets.xcassets */,
+				6E33CCAD2462671C00256CBE /* LaunchScreen.storyboard */,
+				6E33CCB02462671C00256CBE /* Info.plist */,
+			);
+			path = "Flip It Game";
+			sourceTree = "<group>";
+		};
+		6E33CCB82462671D00256CBE /* Flip It GameTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E33CCB92462671D00256CBE /* Flip_It_GameTests.swift */,
+				6E33CCBB2462671D00256CBE /* Info.plist */,
+			);
+			path = "Flip It GameTests";
+			sourceTree = "<group>";
+		};
+		6E33CCC32462671D00256CBE /* Flip It GameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E33CCC42462671D00256CBE /* Flip_It_GameUITests.swift */,
+				6E33CCC62462671D00256CBE /* Info.plist */,
+			);
+			path = "Flip It GameUITests";
+			sourceTree = "<group>";
+		};
+		6E33CCDE2463D9D400256CBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E33CCDF2463D9D600256CBE /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E33CCE32463DB7700256CBE /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				6E33CCF3246C816D00256CBE /* 8BitSurf.mp3 */,
+				6E33CCF5246C816D00256CBE /* FeelGood.mp3 */,
+				6E33CCF4246C816D00256CBE /* ShakeItUp.mp3 */,
+				6E33CCF12466457A00256CBE /* BadApple.mp3 */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E33CC9A2462671900256CBE /* Flip It Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E33CCC92462671D00256CBE /* Build configuration list for PBXNativeTarget "Flip It Game" */;
+			buildPhases = (
+				6E33CC972462671900256CBE /* Sources */,
+				6E33CC982462671900256CBE /* Frameworks */,
+				6E33CC992462671900256CBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Flip It Game";
+			productName = "Flip It Game";
+			productReference = 6E33CC9B2462671900256CBE /* Fusion Atom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E33CCB42462671D00256CBE /* Flip It GameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E33CCCC2462671D00256CBE /* Build configuration list for PBXNativeTarget "Flip It GameTests" */;
+			buildPhases = (
+				6E33CCB12462671D00256CBE /* Sources */,
+				6E33CCB22462671D00256CBE /* Frameworks */,
+				6E33CCB32462671D00256CBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E33CCB72462671D00256CBE /* PBXTargetDependency */,
+			);
+			name = "Flip It GameTests";
+			productName = "Flip It GameTests";
+			productReference = 6E33CCB52462671D00256CBE /* Flip It GameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E33CCBF2462671D00256CBE /* Flip It GameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E33CCCF2462671D00256CBE /* Build configuration list for PBXNativeTarget "Flip It GameUITests" */;
+			buildPhases = (
+				6E33CCBC2462671D00256CBE /* Sources */,
+				6E33CCBD2462671D00256CBE /* Frameworks */,
+				6E33CCBE2462671D00256CBE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E33CCC22462671D00256CBE /* PBXTargetDependency */,
+			);
+			name = "Flip It GameUITests";
+			productName = "Flip It GameUITests";
+			productReference = 6E33CCC02462671D00256CBE /* Flip It GameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E33CC932462671900256CBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Khoi Huu Minh Le";
+				TargetAttributes = {
+					6E33CC9A2462671900256CBE = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					6E33CCB42462671D00256CBE = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 6E33CC9A2462671900256CBE;
+					};
+					6E33CCBF2462671D00256CBE = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 6E33CC9A2462671900256CBE;
+					};
+				};
+			};
+			buildConfigurationList = 6E33CC962462671900256CBE /* Build configuration list for PBXProject "Flip It Game" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E33CC922462671900256CBE;
+			productRefGroup = 6E33CC9C2462671900256CBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E33CC9A2462671900256CBE /* Flip It Game */,
+				6E33CCB42462671D00256CBE /* Flip It GameTests */,
+				6E33CCBF2462671D00256CBE /* Flip It GameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E33CC992462671900256CBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E33CCF6246C816D00256CBE /* 8BitSurf.mp3 in Resources */,
+				6E33CCD9246348E000256CBE /* Magic.sks in Resources */,
+				6E33CCAA2462671900256CBE /* Main.storyboard in Resources */,
+				6E33CCF7246C816D00256CBE /* ShakeItUp.mp3 in Resources */,
+				6E33CCD324626EA300256CBE /* SuperMario256.ttf in Resources */,
+				6E33CCF22466457A00256CBE /* BadApple.mp3 in Resources */,
+				6E33CCA12462671900256CBE /* GameScene.sks in Resources */,
+				6E33CCF8246C816D00256CBE /* FeelGood.mp3 in Resources */,
+				6E33CCAC2462671C00256CBE /* Assets.xcassets in Resources */,
+				6E33CCAF2462671C00256CBE /* LaunchScreen.storyboard in Resources */,
+				6E33CCA32462671900256CBE /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E33CCB32462671D00256CBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E33CCBE2462671D00256CBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E33CC972462671900256CBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E33CCA52462671900256CBE /* GameScene.swift in Sources */,
+				6E33CCE22463DB6200256CBE /* SoundManager.swift in Sources */,
+				6E33CCA72462671900256CBE /* GameViewController.swift in Sources */,
+				6E33CC9F2462671900256CBE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E33CCB12462671D00256CBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E33CCBA2462671D00256CBE /* Flip_It_GameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E33CCBC2462671D00256CBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E33CCC52462671D00256CBE /* Flip_It_GameUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E33CCB72462671D00256CBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E33CC9A2462671900256CBE /* Flip It Game */;
+			targetProxy = 6E33CCB62462671D00256CBE /* PBXContainerItemProxy */;
+		};
+		6E33CCC22462671D00256CBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E33CC9A2462671900256CBE /* Flip It Game */;
+			targetProxy = 6E33CCC12462671D00256CBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E33CCA82462671900256CBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E33CCA92462671900256CBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E33CCAD2462671C00256CBE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E33CCAE2462671C00256CBE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E33CCC72462671D00256CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E33CCC82462671D00256CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E33CCCA2462671D00256CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 9XKRLP2M5W;
+				INFOPLIST_FILE = "Flip It Game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KhoiLe.Flip-It-Game";
+				PRODUCT_NAME = "Fusion Atom";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E33CCCB2462671D00256CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 9XKRLP2M5W;
+				INFOPLIST_FILE = "Flip It Game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KhoiLe.Flip-It-Game";
+				PRODUCT_NAME = "Fusion Atom";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E33CCCD2462671D00256CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XKRLP2M5W;
+				INFOPLIST_FILE = "Flip It GameTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KhoiLe.Flip-It-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flip It Game.app/Flip It Game";
+			};
+			name = Debug;
+		};
+		6E33CCCE2462671D00256CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XKRLP2M5W;
+				INFOPLIST_FILE = "Flip It GameTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KhoiLe.Flip-It-GameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flip It Game.app/Flip It Game";
+			};
+			name = Release;
+		};
+		6E33CCD02462671D00256CBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XKRLP2M5W;
+				INFOPLIST_FILE = "Flip It GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KhoiLe.Flip-It-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Flip It Game";
+			};
+			name = Debug;
+		};
+		6E33CCD12462671D00256CBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9XKRLP2M5W;
+				INFOPLIST_FILE = "Flip It GameUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.KhoiLe.Flip-It-GameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Flip It Game";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E33CC962462671900256CBE /* Build configuration list for PBXProject "Flip It Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E33CCC72462671D00256CBE /* Debug */,
+				6E33CCC82462671D00256CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E33CCC92462671D00256CBE /* Build configuration list for PBXNativeTarget "Flip It Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E33CCCA2462671D00256CBE /* Debug */,
+				6E33CCCB2462671D00256CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E33CCCC2462671D00256CBE /* Build configuration list for PBXNativeTarget "Flip It GameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E33CCCD2462671D00256CBE /* Debug */,
+				6E33CCCE2462671D00256CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E33CCCF2462671D00256CBE /* Build configuration list for PBXNativeTarget "Flip It GameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E33CCD02462671D00256CBE /* Debug */,
+				6E33CCD12462671D00256CBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E33CC932462671900256CBE /* Project object */;
+}
